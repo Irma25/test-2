@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter II day-1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <!-- Left Side -->
+        <a class="navbar-brand me-5" href="#"><img src="../public/assets/img/logo.png" alt="Logo-Dumbways"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link nav-link-active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/addproject">Add Project</a>
+            </li>
+          </ul>
+          <!-- End Left Side -->
+
+          <!-- Right Side -->
+          <a href="/form" class="btn btn-orange text-white">Contact Me</a>
+          <!-- End Right Side -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero -->
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5" style="background-color:rgb(165, 161, 161) ;">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start mb-5">
+          <h1 class="display-4  fw-bold fs-1 lh-1 mb-4" style="color:white;">Hi welcome to my hut</h1>
+          <p class="col-lg-10 fs-5" style="text-align: justify;">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Esse quisquam tenetur modi praesentium voluptas vero. Odio cumque 
+            impedit vel vitae, expedita consequatur nisi alias, earum asperiores 
+            dolorum tempora. Ad amet quisquam repudiandae delectus atque ullam vel 
+            animi culpa commodi alias asperiores laudantium placeat aliquid eveniet magnam,
+             magni nesciunt cupiditate exercitationem rerum, voluptatibus possimus officiis. 
+             Numquam amet atque voluptatibus ducimus error!, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nemo non. Ipsa recusandae tenetur molestiae voluptates ex assumenda libero dignissimos, sed quia sunt, corporis voluptatibus impedit? Aperiam voluptatem aliquid voluptate.
+          </p>
+        </div>
+
+        
+       <div class="card-group " style="width:400px;">
+           <div class="card">
+             <img src="../public/assets/img/me.png" class="card-img-top" alt="..." style="width:100% ;">
+               <div class="card-body text-center">
+                  <h5 class="card-title">Irma Damaiyanti</h5>
+                  <p class="card-text">Fullstack Developer</p>
+                 </div>
+              </div>
+        </div>
+          
+      
+    <!-- End-Hero -->
+
+
+    <!-- My Project -->
+    <hr style="border:2px solid white;">
+    <div class="heading-my-project text-center" style="color:white; ">
+      <h1>My Project</h1>
+    </div>
+
+    <div class="card-group" id="project-list">
+      
+      <div class="card me-4">
+        <img src="../public/assets/img/android-logo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="/addproject-detail/Dumbways-Mobile-2022" target="_blank">Dumbways Mobile 2022</a>
+            </h5>
+          <p>Duration 3 Months</p>
+          <p class="card-text">
+            This is a wider card with supporting 
+            </p>
+        </div>
+
+        <div class="checkbox-img d-flex" style="margin-top:-20px ;">
+          <div class="checkbox-group d-flex flex-row " style="width:150px ;">
+            <div class="checkbox1 me-3 ms-3">
+              <img src="../public/assets/img/nodejs.png" alt="" style="width:100%;">
+            </div>
+            <div class="checkbox1 me-3">
+              <img src="../public/assets/img/socket_io_logo_icon_144874.png" alt="" style="width:100%;">
+            </div>
+            <div class="checkbox1">
+              <img src="../public/assets/img/socket_io_logo_icon_144874.png" alt="" style="width:100%;">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer d-flex justify-content-center mt-4 " >
+          <button type="button" class="btn me-3" style="background-color:gray;">Edit</button>
+          <button type="button" class="btn" style="background-color:gray;">Delete</button>
+        </div>
+
+      </div>
+
+      <div class="card me-4">
+        <img src="../public/assets/img/instagram.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fullstack Website Designer</h5>
+          <p>Duration 3 Months</p>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+
+        <div class="checkbox-img d-flex">
+          <div class="checkbox-group d-flex flex-row " style="width:150px ;">
+            <div class="checkbox1 me-3 ms-3">
+              <img src="../public/assets/img/nodejs.png" alt="" style="width:100%;">
+            </div>
+            <div class="checkbox1 me-3">
+              <img src="../public/assets/img/socket_io_logo_icon_144874.png" alt="" style="width:100%;">
+            </div>
+            <div class="checkbox1">
+              <img src="../public/assets/img/socket_io_logo_icon_144874.png" alt="" style="width:100%;">
+            </div>
+          </div>
+        </div>
+        
+        {{#if isLogin}}
+        <div class="card-footer d-flex justify-content-center mt-4 " >
+          <button type="button" class="btn me-3" style="background-color:gray;">Edit</button>
+          <button type="button" class="btn" style="background-color:gray;">Delete</button>
+        </div>
+        {{/if}}
+
+      </div>
+      
+      <div class="card">
+        <img src="../public/assets/img/java-script-logo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Devops 2022</h5>
+          <p>Duration 3 months</p>
+          <p class="card-text">This is a wider card with supporting text action.</p>
+        </div>
+
+        <div class="checkbox-img d-flex">
+          <div class="checkbox-group d-flex flex-row " style="width:150px ;">
+            <div class="checkbox1 me-3 ms-3">
+              <img src="../public/assets/img/nodejs.png" alt="" style="width:100%;">
+            </div>
+            <div class="checkbox1 me-3">
+              <img src="../public/assets/img/socket_io_logo_icon_144874.png" alt="" style="width:100%;">
+            </div>
+            <div class="checkbox1">
+              <img src="../public/assets/img/socket_io_logo_icon_144874.png" alt="" style="width:100%;">
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-footer d-flex justify-content-center mt-4 " >
+          <button type="button" class="btn me-3" style="background-color:gray;">Edit</button>
+          <button type="button" class="btn" style="background-color:gray;">Delete</button>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    
+    
+
+      
+
+    </div>
+
+    
+    <!-- End My Project -->
+
+   
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
